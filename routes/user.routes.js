@@ -20,5 +20,9 @@ router.get(
   userExists,
   useController.profile
 ); /* Ruta para autenticar y si el usurario existe */
+router.get("/users/profile/:userId", userExists, useController.publicProfile) /* Para obtener un perfil público */ 
 
 export default router;
+/** Notas: */
+/** El authUser valida al usuariio */
+/** El "userExists" lo que hace el obtener información del usuario  */
