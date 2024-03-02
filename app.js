@@ -21,3 +21,5 @@ app.listen(HTTP_PORT, () => {
 });
 
 /** importamos la libreria "fileUpload" para que el manejo de archivos como fotos sea posible */
+
+/* Nota: todo lo que manipule archivo o base de datos va hacer asincronico, por eso siempre va "async" */
