@@ -1,7 +1,7 @@
 import joi from "joi";
 import joiMsg from "../joi.messages.js";
 
-export const validateSchema = joi.object({
+const validateSchema = joi.object({
   registrationCode: joi
     .string()
     .min(30)
@@ -11,3 +11,4 @@ export const validateSchema = joi.object({
     .messages({ ...joiMsg.errorMsg, ...joiMsg.errorMsgUsername }),
 });
 
+export default validateSchema;

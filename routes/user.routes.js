@@ -21,6 +21,7 @@ router.get(
   useController.profile
 ); /* Ruta para autenticar y si el usurario existe */
 router.get("/users/profile/:userId", userExists, useController.publicProfile) /* Para obtener un perfil público */ 
+router.put("/users/avatar", authUser, userExists, useController.editAvatar)
 
 export default router;
 /** Notas: */
