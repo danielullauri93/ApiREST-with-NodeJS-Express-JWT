@@ -31,8 +31,20 @@ router.put(
   userExists,
   userController.editAvatar
 ); /** Para agregar un avatar(foto) y tambien para actualizarlo */
-router.post('/users/password/recover', userController.passwordRecover) /** Ruta para recuperar contraseña */
-router.put("/users/password/recover", userController.passwordUpdateByRecover) /** Ruta para actualizar contraseña */
+router.post(
+  "/users/password/recover",
+  userController.passwordRecover
+); /** Ruta para recuperar contraseña */
+router.put(
+  "/users/password/recover",
+  userController.passwordUpdateByRecover
+); /** Ruta para recuperar contraseña */
+router.put(
+  "/users/password/change",
+  authUser,
+  userExists,
+  userController.passwordChange
+); /** Ruta para actualizar contraseña */
 
 export default router;
 /** Notas: */

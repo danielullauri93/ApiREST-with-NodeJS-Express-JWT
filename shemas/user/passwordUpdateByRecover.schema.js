@@ -1,7 +1,7 @@
 import joi from "joi";
 import joiMsg from "../joi.messages.js";
 
-const passwordRecover = joi.object({
+const passwordUpdateByRecoverSchema = joi.object({
   email: joi.string().email().required().messages(joiMsg.errorMsg),
   recoverPassCode: joi
     .string()
@@ -18,4 +18,4 @@ const passwordRecover = joi.object({
     .messages({ ...joiMsg.errorMsg, ...joiMsg.errorMsgPassword })
 });
 
-export default passwordRecover;
+export default passwordUpdateByRecoverSchema;
