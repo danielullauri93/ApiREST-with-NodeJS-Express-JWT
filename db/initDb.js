@@ -80,3 +80,8 @@ const main = async () => {
 
 // Ejecutamos la función anterior.
 main();
+
+/** para ejecutar este archivo y se creen la base de datos y las tablas 
+ * con el comando:
+ * node .\db\initDb.js
+  */

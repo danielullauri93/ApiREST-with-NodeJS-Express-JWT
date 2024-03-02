@@ -7,6 +7,7 @@ import getById from "./getById.service.js";
 import updateAvatar from "./updateAvatar.service.js";
 import updateRecoverPassCode from "./updateRecoverPassCode.service.js";
 import passwordRecoverSendMail from "./passwordRecoverSendMail.service.js";
+import passwordUpdate from "./passwordUpdate.service.js"
 
 export default {
   register,
@@ -18,4 +19,5 @@ export default {
   updateAvatar,
   updateRecoverPassCode,
   passwordRecoverSendMail,
+  passwordUpdate,
 };
