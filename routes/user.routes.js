@@ -20,8 +20,17 @@ router.get(
   userExists,
   useController.profile
 ); /* Ruta para autenticar y si el usurario existe */
-router.get("/users/profile/:userId", userExists, useController.publicProfile) /* Para obtener un perfil público */ 
-router.put("/users/avatar", authUser, userExists, useController.editAvatar)
+router.get(
+  "/users/profile/:userId",
+  userExists,
+  useController.publicProfile
+); /* Para obtener un perfil público */
+router.put(
+  "/users/avatar",
+  authUser,
+  userExists,
+  useController.editAvatar
+); /** Para agregar un avatar(foto) y tambien para actualizarlo */
 
 export default router;
 /** Notas: */
