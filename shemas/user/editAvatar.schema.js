@@ -1,8 +1,8 @@
 import joi from "joi";
-import imgShema from "../img.shemas.js";
+import imgSchema from "../img.schemas.js";
 
 const editAvatarShema = joi.object({
-  avatar: imgShema.required(),
+  avatar: imgSchema.required(),
 });
 
 export default editAvatarShema;

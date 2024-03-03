@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import validateShema from "../../helpers/validate.helper.js";
-import shema from "../../shemas/user/login.shema.js";
+import schema from "../../shemas/user/login.schema.js";
 import userService from "../../services/user/index.service.js";
 import securityService from "../../services/security/index.service.js";
 import errors from "../../helpers/errors.helper.js";
@@ -8,7 +8,7 @@ import errors from "../../helpers/errors.helper.js";
 const main = async (req, res, next) => {
   try {
     // Creamos validación
-    await validateShema(shema, req.body);
+    await validateShema(schema, req.body);
 
     const users = await userService.getByUsernameOrEmail("",req.body.username);
 

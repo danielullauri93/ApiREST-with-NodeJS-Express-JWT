@@ -1,14 +1,14 @@
 import randomstring from "randomstring";
 import bcrypt from "bcrypt";
 import validateShema from "../../helpers/validate.helper.js";
-import shema from "../../shemas/user/register.shema.js";
+import schema from "../../shemas/user/register.schema.js";
 import userService from "../../services/user/index.service.js";
 import errors from "../../helpers/errors.helper.js";
 
 const main = async (req, res, next) => {
   try {
     // Recibir info en req que vamos a tener que validar
-    await validateShema(shema, req.body);
+    await validateShema(schema, req.body);
     const { email, username, password } = req.body;
 
     // Generamos un código aleatorio

@@ -1,4 +1,4 @@
-import shema from "../../shemas/user/editAvatar.shema.js";
+import schema from "../../shemas/user/editAvatar.schema.js";
 import fileService from "../../services/files/index.service.js";
 import userService from "../../services/user/index.service.js";
 import validateSchema from "../../helpers/validate.helper.js";
@@ -6,7 +6,7 @@ import validateSchema from "../../helpers/validate.helper.js";
 const main = async (req, res, next) => {
   try {
     // Validamos los archivos
-    await validateSchema(shema, req.files || {});
+    await validateSchema(schema, req.files || {});
 
     // Almacenar nueva foto
     const fileName = await fileService.savePhoto(req.files.avatar, 150);

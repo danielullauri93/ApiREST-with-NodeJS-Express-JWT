@@ -1,7 +1,9 @@
 import express from "express";
-import userRoutes from "./user.routes.js";
-import productRoutes from "./product.routes.js"
+import userRoute from "./user.routes.js";
+import entryRoute from "./entry.routes.js"
 
-export const router = express.Router();
-router.use(userRoutes);
-router.use(productRoutes)
+const router = express.Router();
+router.use(userRoute);
+router.use(entryRoute);
+
+export default router;

@@ -1,5 +1,5 @@
 import validateHellper from "../../helpers/validate.helper.js";
-import validateSchema from "../../shemas/user/validate.shema.js";
+import validateSchema from "../../shemas/user/validate.schema.js";
 import userService from "../../services/user/index.service.js";
 import errors from "../../helpers/errors.helper.js";
 
