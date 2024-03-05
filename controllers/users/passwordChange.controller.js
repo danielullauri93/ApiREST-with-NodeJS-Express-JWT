@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import validateSchema from "../../helpers/validate.helper.js";
-import schema from "../../shemas/user/passwordChange.schema.js";
+import schema from "../../schemas/user/passwordChange.schema.js";
 import userService from "../../services/user/index.service.js";
 import errors from "../../helpers/errors.helper.js";
 

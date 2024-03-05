@@ -1,6 +1,6 @@
 import randomstring from "randomstring";
 import validateSchema from "../../helpers/validate.helper.js";
-import schema from "../../shemas/user/passwordRecover.schema.js";
+import schema from "../../schemas/user/passwordRecover.schema.js";
 import userService from "../../services/user/index.service.js";
 import errors from "../../helpers/errors.helper.js";
 

@@ -1,5 +1,5 @@
 import validateSchema from "../../helpers/validate.helper.js";
-import schema from "../../shemas/entry/insert.schema.js";
+import schema from "../../schemas/entry/insert.schema.js";
 import entryService from "../../services/entry/index.service.js";
 
 const main = async (req, res, next) => {

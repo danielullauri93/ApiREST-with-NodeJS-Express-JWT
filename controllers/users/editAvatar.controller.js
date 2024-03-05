@@ -1,4 +1,4 @@
-import schema from "../../shemas/user/editAvatar.schema.js";
+import schema from "../../schemas/user/editAvatar.schema.js";
 import fileService from "../../services/files/index.service.js";
 import userService from "../../services/user/index.service.js";
 import validateSchema from "../../helpers/validate.helper.js";

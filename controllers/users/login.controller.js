@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import validateShema from "../../helpers/validate.helper.js";
-import schema from "../../shemas/user/login.schema.js";
+import schema from "../../schemas/user/login.schema.js";
 import userService from "../../services/user/index.service.js";
 import securityService from "../../services/security/index.service.js";
 import errors from "../../helpers/errors.helper.js";

@@ -1,17 +1,17 @@
 import getPool from '../../db/getPool.js';
 import errors from '../../helpers/errors.helper.js';
 
-const main = async (title, place, description, userId) =>{
+const main = async (entry, fileName) =>{
     try {
         const pool = await getPool();
 
-        const sqlQuery = 'INSERT INTO entries (title, place, description, userId) VALUES (?, ?, ?, ?)';
-        const values = [title, place, description, userId]
+        const sqlQuery = 'INSERT INTO entryphotos (name, entryId) VALUES (?, ?)';
+        const values = [fileName, entry.id]
     
         const [response] = await pool.query(sqlQuery, values);
 
         if(response.affectedRows !== 1){
-            errors.conflictError('Error al insertar nueva entrada','INSERT_ENTRY_ERROR');
+            errors.conflictError('Error al insertar nueva foto','INSERT_ENTRYPHOTOS_ERROR');
         }
 
         console.log(response);

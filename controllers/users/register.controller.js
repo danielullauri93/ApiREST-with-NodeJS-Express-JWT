@@ -1,7 +1,7 @@
 import randomstring from "randomstring";
 import bcrypt from "bcrypt";
 import validateShema from "../../helpers/validate.helper.js";
-import schema from "../../shemas/user/register.schema.js";
+import schema from "../../schemas/user/register.schema.js";
 import userService from "../../services/user/index.service.js";
 import errors from "../../helpers/errors.helper.js";
 
